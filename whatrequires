@@ -2,7 +2,11 @@
 R-crayon
 R-devtools
 R-htmlTable
+R-klaR
 R-pkgload
 R-questionr
 R-rsconnect
+R-tensorflow
+R-tfruns
 R-tidyverse
+R-usethis
