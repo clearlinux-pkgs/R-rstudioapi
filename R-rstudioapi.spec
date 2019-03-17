@@ -4,12 +4,14 @@
 #
 Name     : R-rstudioapi
 Version  : 0.9.0
-Release  : 57
+Release  : 58
 URL      : https://cran.r-project.org/src/contrib/rstudioapi_0.9.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rstudioapi_0.9.0.tar.gz
 Summary  : Safely Access the RStudio API
 Group    : Development/Tools
 License  : MIT
+Requires: R-markdown
+BuildRequires : R-markdown
 BuildRequires : buildreq-R
 
 %description
@@ -23,10 +25,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1547741479
+export SOURCE_DATE_EPOCH=1552787296
 
 %install
-export SOURCE_DATE_EPOCH=1547741479
+export SOURCE_DATE_EPOCH=1552787296
 rm -rf %{buildroot}
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -62,8 +64,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library rstudioapi|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  rstudioapi || :
 
 
 %files

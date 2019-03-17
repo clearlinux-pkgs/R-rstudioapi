@@ -1,8 +1,8 @@
 # This file contains recursive sources that require this package
 R-crayon
-R-devtools
 R-htmlTable
 R-klaR
+R-pkgdown
 R-pkgload
 R-questionr
 R-rsconnect
