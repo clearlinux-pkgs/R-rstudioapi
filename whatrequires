@@ -1,13 +1,14 @@
 # This file contains recursive sources that require this package
-R-Hmisc
-R-RcmdrMisc
+R-PerformanceAnalytics
 R-crayon
-R-haplo.stats
+R-devtools
 R-htmlTable
 R-klaR
+R-lintr
 R-pkgdown
 R-pkgload
 R-questionr
+R-rms
 R-rsconnect
 R-tensorflow
 R-tfruns
