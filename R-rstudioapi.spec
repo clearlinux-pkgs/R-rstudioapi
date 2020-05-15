@@ -4,7 +4,7 @@
 #
 Name     : R-rstudioapi
 Version  : 0.11
-Release  : 71
+Release  : 72
 URL      : https://cran.r-project.org/src/contrib/rstudioapi_0.11.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rstudioapi_0.11.tar.gz
 Summary  : Safely Access the RStudio API
@@ -17,21 +17,22 @@ messages when it's not.
 
 %prep
 %setup -q -c -n rstudioapi
+cd %{_builddir}/rstudioapi
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1581189362
+export SOURCE_DATE_EPOCH=1589509001
 
 %install
-export SOURCE_DATE_EPOCH=1581189362
+export SOURCE_DATE_EPOCH=1589509001
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
-export FFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
+export FCFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
+export FFLAGS="$FFLAGS -O3 -flto -fno-semantic-interposition "
 export CXXFLAGS="$CXXFLAGS -O3 -flto -fno-semantic-interposition "
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
