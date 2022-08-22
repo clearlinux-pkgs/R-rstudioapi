@@ -1,13 +1,10 @@
 # This file contains recursive sources that require this package
 R-DescTools
 R-DiagrammeR
-R-devtools
 R-gargle
 R-gert
 R-htmlTable
 R-kableExtra
-R-lintr
-R-pkgload
 R-questionr
 R-reprex
 R-rsconnect
