@@ -7,7 +7,7 @@
 #
 Name     : R-rstudioapi
 Version  : 0.16.0
-Release  : 100
+Release  : 101
 URL      : https://cran.r-project.org/src/contrib/rstudioapi_0.16.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/rstudioapi_0.16.0.tar.gz
 Summary  : Safely Access the RStudio API
